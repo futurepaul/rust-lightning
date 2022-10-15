@@ -35,7 +35,7 @@ std = ["bitcoin/std"]
 default = ["std"]
 
 [dependencies]
-bitcoin = { version = "0.27", default-features = false, features = ["secp-recovery"] }
+bitcoin = { version = "0.29", default-features = false, features = ["secp-recovery"] }
 # TODO remove this once rust-bitcoin PR #637 is released
 secp256k1 = { version = "0.20.2", default-features = false, features = ["alloc"] }
 
@@ -53,6 +53,6 @@ regex = "0.2.11"
 secp256k1 = { version = "0.20.2", default-features = false, features = ["alloc"] }
 
 [dev-dependencies.bitcoin]
-version = "0.27"
+version = "0.29"
 default-features = false
 features = ["bitcoinconsensus", "secp-recovery"]
